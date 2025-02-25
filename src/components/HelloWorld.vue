@@ -8,6 +8,7 @@
       </div>
     </div>
     <ParamountPlus />
+    <ResumePage />
     <FSWScheduleSearch />
     <DadSite />
   </div>
@@ -17,6 +18,7 @@
 import ParamountPlus from './ParamountPlus.vue'
 import DadSite from './DadSite.vue'
 import FSWScheduleSearch from './FSWScheduleSearch.vue'
+import ResumePage from './ResumePage.vue'
 
 defineProps({
   name: {

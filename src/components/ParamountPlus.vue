@@ -31,6 +31,7 @@ defineProps({
   align-items: center;
   min-height: 20vh;
   width: 100%;
+  max-width: 800px;
 }
 
 .floating-div {
