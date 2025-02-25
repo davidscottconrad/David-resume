@@ -10,8 +10,8 @@
       </div>
     </div>
     <ParamountPlus />
-    <DadSite />
     <FSWScheduleSearch />
+    <DadSite />
   </div>
 </template>
 
