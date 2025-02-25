@@ -10,11 +10,15 @@
       </div>
     </div>
     <ParamountPlus />
+    <DadSite />
+    <FSWScheduleSearch />
   </div>
 </template>
 
 <script setup>
 import ParamountPlus from './ParamountPlus.vue'
+import DadSite from './DadSite.vue'
+import FSWScheduleSearch from './FSWScheduleSearch.vue'
 
 defineProps({
   name: {
