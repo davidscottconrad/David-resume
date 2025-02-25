@@ -1,60 +1,53 @@
 <template>
-  <div class="container">
+  <div id="container">
     <div class="floating-div">
-      <div class="content">
-        <h1>{{ name }}</h1>
-        <h3>{{ subtitle }}</h3>
-        <p>{{ description }}</p>
-
-        <!-- Added ParamountPlus component here -->
-      </div>
+      <a href="https://www.paramountminus.me/#/" target="_blank">
+        <div class="content">
+          <h1>Paramount Plus Clone</h1>
+          <p>{{ description }}</p>
+        </div>
+      </a>
     </div>
-    <ParamountPlus />
   </div>
 </template>
 
 <script setup>
-import ParamountPlus from './ParamountPlus.vue'
-
 defineProps({
   name: {
     type: String,
     default: 'David Conrad',
   },
-  subtitle: {
-    type: String,
-    default: 'Front End Software Engineer',
-  },
   description: {
     type: String,
-    default: 'A website to showcase my projects and professional experience',
+    default: 'Django, Vue, and the AWS suite',
   },
 })
 </script>
 
 <style scoped>
-.container {
+#container {
+  margin: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 80vh;
-  padding: 2rem;
-  text-align: center;
+  min-height: 20vh;
+  width: 100%;
 }
+
 .floating-div {
   width: 100%;
-  max-width: 800px;
   border-radius: 0;
   box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.4);
-  background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #f9ae2d);
+  background-image: linear-gradient(45deg, #0064ff, #0037c5);
   position: relative;
   overflow: hidden;
 }
+
 .content {
   padding: 3rem;
   color: white;
 }
+
 h1 {
   font-weight: 700;
   font-size: 2.6rem;
@@ -62,7 +55,8 @@ h1 {
   color: white;
   text-align: center;
 }
-h2 {
+
+h3 {
   font-size: 1.4rem;
   font-weight: 700;
   margin: 1.5rem 0 0.5rem 0;
@@ -70,6 +64,7 @@ h2 {
   text-align: center;
   letter-spacing: 0.05em;
 }
+
 p {
   margin: 0 0 0.5rem 0;
   font-size: 1.1rem;
@@ -77,28 +72,7 @@ p {
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
 }
-.location {
-  font-size: 1.2rem;
-}
-.contact-info {
-  font-size: 1rem;
-}
-.separator {
-  margin: 0 0.5rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-a:hover {
-  color: #ffe4b4;
-  text-decoration: underline;
-}
-.about-content {
-  margin-top: 1rem;
-}
+
 @media (min-width: 1024px) {
   h1,
   h3,
