@@ -1,8 +1,16 @@
 <script setup>
 defineProps({
-  msg: {
+  name: {
     type: String,
-    required: true,
+    default: 'David Conrad',
+  },
+  subtitle: {
+    type: String,
+    default: 'Front End Software Engineer',
+  },
+  description: {
+    type: String,
+    default: 'A website to showcase my projects and professional experience',
   },
 })
 </script>
@@ -11,12 +19,9 @@ defineProps({
   <div class="container">
     <div class="floating-div">
       <div class="content">
-        <h1>{{ msg }}</h1>
-        <h3>Welcome to the floating gradient div</h3>
-        <p>
-          This component features a floating animation effect with a gradient background inspired by
-          the Ethereal template.
-        </p>
+        <h1>{{ name }}</h1>
+        <h3>{{ subtitle }}</h3>
+        <p>{{ description }}</p>
       </div>
     </div>
   </div>
@@ -27,8 +32,9 @@ defineProps({
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 2rem;
+  text-align: center;
 }
 
 .floating-div {
@@ -36,7 +42,7 @@ defineProps({
   max-width: 800px;
   border-radius: 0;
   box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.4);
-  background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+  background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #f9ae2d);
   position: relative;
   overflow: hidden;
 }
@@ -49,25 +55,54 @@ defineProps({
 h1 {
   font-weight: 700;
   font-size: 2.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: white;
   text-align: center;
 }
 
-h3 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.9);
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.5rem 0;
+  color: white;
   text-align: center;
+  letter-spacing: 0.05em;
 }
 
 p {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 0.5rem 0;
   font-size: 1.1rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
+}
+
+.location {
+  font-size: 1.2rem;
+}
+
+.contact-info {
+  font-size: 1rem;
+}
+
+.separator {
+  margin: 0 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #ffe4b4;
+  text-decoration: underline;
+}
+
+.about-content {
+  margin-top: 1rem;
 }
 
 @media (min-width: 1024px) {
