@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="248" fill="#f8f9fa" stroke="#2c3e50" stroke-width="16"/>
+  
+  <!-- Document outline -->
+  <path d="M160 128 L352 128 L352 384 L160 384 Z" fill="#fff" stroke="#2c3e50" stroke-width="12" stroke-linejoin="round"/>
+  
+  <!-- Document fold -->
+  <path d="M320 128 L352 160 L320 160 Z" fill="#e9ecef" stroke="#2c3e50" stroke-width="8" stroke-linejoin="round"/>
+  
+  <!-- Text lines -->
+  <line x1="192" y1="192" x2="320" y2="192" stroke="#3498db" stroke-width="12" stroke-linecap="round"/>
+  <line x1="192" y1="240" x2="320" y2="240" stroke="#2c3e50" stroke-width="12" stroke-linecap="round"/>
+  <line x1="192" y1="288" x2="280" y2="288" stroke="#2c3e50" stroke-width="12" stroke-linecap="round"/>
+  <line x1="192" y1="336" x2="240" y2="336" stroke="#2c3e50" stroke-width="12" stroke-linecap="round"/>
+</svg>

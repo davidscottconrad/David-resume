@@ -26,7 +26,6 @@ defineProps({
 
 <style scoped>
 #container {
-  margin: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;

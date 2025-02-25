@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :style="{ backgroundImage: `url(${parchment})` }">
     <div class="resume-wrapper">
       <header class="resume-header">
         <h1>DAVID CONRAD</h1>
@@ -9,29 +9,45 @@
           <span class="separator">|</span>
           <span>502-381-3806</span>
           <span class="separator">|</span>
-          <a href="#" class="link">LinkedIn</a>
+          <a target="_blank" href="https://www.linkedin.com/in/david-scott-conrad/" class="link"
+            >LinkedIn</a
+          >
           <span class="separator">|</span>
-          <a href="#" class="link">Github</a>
+          <a target="_blank" href="https://github.com/davidscottconrad" class="link">Github</a>
+          <span class="separator">|</span>
+          <a target="_blank" href="/" class="link">Portfolio</a>
         </div>
-        <h2 class="job-title">FRONT END SOFTWARE ENGINEER</h2>
+        <h2 class="job-title">FULL STACK SOFTWARE ENGINEER - 4+ YOE</h2>
       </header>
 
       <section class="experience-section">
         <div class="job">
           <div class="job-header">
-            <h3>AHEAD</h3>
+            <h3>AHEAD / CDI</h3>
             <div class="job-location">
               <span>Chicago, IL and NY, NY (Remote)</span>
               <span>Sep 2022-Present</span>
             </div>
           </div>
-          <p class="job-title-inner">Software Engineer</p>
+          <p class="job-title-inner">IT Services and IT Consulting</p>
+          <p class="job-title-inner">Full Stack Software Engineer</p>
           <ul>
-            <li>Lead front end modernization of a four year old client portal. Vue.js</li>
+            <li>Lead front end modernization of a four year old client portal.</li>
             <li>
-              Created Google Maps API integration for 1 billion in sales. Pheonix Elixir Framework
+              Created Google Maps API to validate addresses across 1 billion dollars of sales, three
+              salesforce instances, our client portal database, and new incoming addresses. API
+              prevents duplicate customer sites, increasing data accuracy
             </li>
-            <li>Full Stack Dashboard - Big Panda Integration. Vue, Laravel, S3, Mongoldb</li>
+            <li>
+              Developed comprehensive dashboards using Servicenow, Logicmonitor, and Backup Radar
+              APIs, providing customers with visibility into their services and enabling them to
+              monitor their usage to reducing inquiries.
+            </li>
+            <li>
+              Integrated HashiCorp Vault into the codebase for secure secrets management,
+              collaborating with experienced DevOps engineers, which contributed to successful and
+              reliable production deployments.
+            </li>
           </ul>
         </div>
 
@@ -43,13 +59,19 @@
               <span>Nov 2020-Sep 2022</span>
             </div>
           </div>
-          <p class="job-title-inner">Software Engineer</p>
+          <p class="job-title-inner">Full Stack Software Engineer</p>
           <ul>
             <li>
-              Modernized the Class Schedule Search. 15,000 students per semester. React, Codeigniter
-              PHP. <a href="#" class="link">Class Schedule Search</a>
+              Modernized the Schedule Search functionality on Class Schedule Search used by 15,000
+              students each semester.
+              <a target="_blank" href="https://www.fsw.edu/academics/schedule_search" class="link"
+                >Class Schedule Search</a
+              >
             </li>
-            <li>Maintained fsw.edu in PHP and React.</li>
+            <li>
+              Maintained and updated fsw.edu in partnership with cross-functional teams, ensuring
+              the site remained current and informative for students.
+            </li>
           </ul>
         </div>
 
@@ -68,17 +90,43 @@
               Supported product validation efforts, ensuring quality standards and specifications
               were met.
             </li>
-            <li>Assisted in preparing and organizing non-conformance reports</li>
+            <li>
+              Assisted in preparing and organizing non-conformance reports, supporting the
+              identification and resolution of quality issues.
+            </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="education-section">
+        <h3 class="section-title">EDUCATION</h3>
+        <div class="education-item">
+          <div class="education-header">
+            <p><strong>Indiana University Southeast</strong>, New Albany, IN</p>
+            <p>2014-2020</p>
+          </div>
+          <p>BA – General Studies, Minor Informatics</p>
         </div>
       </section>
 
       <section class="portfolio-section">
         <h3 class="section-title">PORTFOLIO</h3>
         <ul>
-          <li><a href="#" class="link">Paramount+ Clone</a></li>
-          <li><a href="#" class="link">Doctors Office Website</a></li>
-          <li><a href="#" class="link">Class Schedule Search</a></li>
+          <li>
+            <a target="_blank" href="https://www.paramountminus.me/#/" class="link"
+              >Paramount+ Clone</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.conradeyecenters.com/" class="link"
+              >Doctors Office Website</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.fsw.edu/academics/schedule_search" class="link"
+              >Class Schedule Search</a
+            >
+          </li>
         </ul>
       </section>
 
@@ -89,26 +137,31 @@
           Next.js, Vue, CSS, Tailwind, Bootstrap, GraphQL, Elixir
         </p>
         <p><strong>Databases:</strong> PostgreSQL, MongoDB</p>
-        <p><strong>Cloud Services:</strong> AWS Suite, Third-Party REST APIs, S3</p>
+        <p><strong>Cloud Services:</strong> AWS Suite, Third-Party REST APIs</p>
         <p>
           <strong>Tools:</strong> Microsoft Visual Studio, Git, HashiCorp Vault, Linux, GitHub,
           Bitbucket, Jira, Agile methodologies, Servicenow
         </p>
-      </section>
-
-      <section class="education-section">
-        <h3 class="section-title">EDUCATION</h3>
-        <div class="education-item">
-          <div class="education-header">
-            <p><strong>Indiana University Southeast</strong>, New Albany, IN</p>
-            <p>2014-2020</p>
-          </div>
-          <p>BA – General Studies, Minor Informatics (Business Computer Science)</p>
-        </div>
+        <p>
+          <strong>Additional Skills:</strong> Proficient in software architectures, code reviews,
+          computer science fundamentals, and database management
+        </p>
       </section>
     </div>
   </div>
 </template>
+
+<script>
+import parchment from '@/assets/parchment.jpg'
+export default {
+  name: 'ResumeComponent',
+  data() {
+    return {
+      parchment,
+    }
+  },
+}
+</script>
 
 <style scoped>
 .container {
@@ -116,13 +169,19 @@
   justify-content: center;
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-image: url(~@/assets/parchment.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   min-height: 100vh;
   width: 100%;
   margin: 0;
 }
+.resume-wrapper {
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+}
+
 .resume-header {
   text-align: center;
   margin-bottom: 20px;
@@ -147,7 +206,6 @@
   font-weight: bold;
   margin-top: 15px;
   padding-bottom: 5px;
-  border-bottom: 2px solid #ccc;
 }
 
 .experience-section,
@@ -188,7 +246,6 @@ ul {
 .section-title {
   font-weight: bold;
   font-size: 18px;
-  border-bottom: 2px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
@@ -200,12 +257,13 @@ ul {
 }
 
 .link {
-  color: #0066cc;
+  color: #3f3723;
   text-decoration: none;
 }
 
 .link:hover {
   text-decoration: underline;
+  background-color: transparent;
 }
 
 strong {

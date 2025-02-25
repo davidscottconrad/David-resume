@@ -5,8 +5,6 @@
         <h1>{{ name }}</h1>
         <h3>{{ subtitle }}</h3>
         <p>{{ description }}</p>
-
-        <!-- Added ParamountPlus component here -->
       </div>
     </div>
     <ParamountPlus />
@@ -45,6 +43,10 @@ defineProps({
   min-height: 80vh;
   padding: 2rem;
   text-align: center;
+  gap: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 5rem;
 }
 .floating-div {
   width: 100%;
