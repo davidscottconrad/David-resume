@@ -39,6 +39,7 @@ defineProps({
   border-radius: 0;
   box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.4);
   background-color: #a99972;
+  background-image: linear-gradient(45deg, #a99972, #413b2c);
   position: relative;
   overflow: hidden;
 }
