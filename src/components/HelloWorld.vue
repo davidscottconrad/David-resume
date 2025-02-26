@@ -48,6 +48,7 @@ defineProps({
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0rem;
+  margin-top: 5rem;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -171,7 +172,9 @@ a:hover {
     padding: 1rem;
     margin-left: 0rem;
     margin-right: 0rem;
+    margin-top: 2.5rem;
     gap: 2.5rem;
+
     margin-bottom: 0;
   }
 }

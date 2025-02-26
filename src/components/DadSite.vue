@@ -38,7 +38,7 @@ defineProps({
   width: 100%;
   border-radius: 0;
   box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.4);
-  background: #535353;
+  background-image: linear-gradient(45deg, #1e7301, #6be7ad);
   position: relative;
   overflow: hidden;
 }
