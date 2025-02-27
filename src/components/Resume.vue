@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :style="{ backgroundImage: `url(${parchment})` }">
+  <div class="container">
     <div class="resume-wrapper">
       <header class="resume-header">
         <h1>DAVID CONRAD</h1>
@@ -263,7 +263,7 @@ ul {
 
 .link:hover {
   text-decoration: underline;
-  background-color: transparent;
+  background-color: rgb(246, 245, 223);
 }
 
 strong {
