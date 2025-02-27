@@ -8,9 +8,9 @@
       </div>
     </div>
     <ParamountPlus />
-    <ResumePage />
     <FSWScheduleSearch />
     <DadSite />
+    <ResumePage />
   </div>
 </template>
 

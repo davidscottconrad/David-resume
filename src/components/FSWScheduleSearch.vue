@@ -42,7 +42,7 @@ defineProps({
   overflow: hidden;
 }
 .content {
-  padding: 3rem;
+  padding: 2rem;
   color: white;
 }
 h1 {
