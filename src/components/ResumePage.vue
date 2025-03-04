@@ -1,7 +1,7 @@
 <template>
   <div id="container">
     <div class="floating-div">
-      <a href="/resume" target="_blank">
+      <a :href="resumePath" download="David_Conrad_resume.pdf">
         <div class="content">
           <h1>Resume</h1>
           <!-- <p>{{ description }}</p> -->
@@ -12,6 +12,11 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import resumePdf from '../components/David_Conrad_resume_02_25_25.pdf'
+
+const resumePath = ref(resumePdf)
+
 defineProps({
   name: {
     type: String,
@@ -32,6 +37,7 @@ defineProps({
   min-height: 20vh;
   width: 100%;
   max-width: 800px;
+  margin-bottom: 4rem;
 }
 
 .floating-div {
