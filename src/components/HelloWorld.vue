@@ -1,24 +1,41 @@
 <template>
   <div class="container">
-    <div class="floating-div">
-      <div class="content">
-        <h1>{{ name }}</h1>
-        <h3>{{ subtitle }}</h3>
-        <p>{{ description }}</p>
-      </div>
-    </div>
-    <ParamountPlus />
-    <FSWScheduleSearch />
-    <DadSite />
+    <ProjectCard
+      projectName="David Conrad Portfolio"
+      projectDescription="Software Developer"
+      projectLink=""
+      gradientStart="#726193"
+      gradient-middle="#e37b7c"
+      gradientEnd="#f9ae2d"
+    />
+    <ProjectCard
+      projectName="Paramount Plus Clone"
+      projectDescription="Django, Vue, and the AWS suite"
+      projectLink="https://www.paramountminus.me/#/"
+      gradientStart="#0460ea"
+      gradientEnd="#a3bbf7"
+    />
+    <ProjectCard
+      projectName="FSW Schedule Search"
+      projectDescription="React, CodeIgniter, Docker"
+      projectLink="https://www.fsw.edu/academics/schedule_search"
+      gradientStart="#8b08b3"
+      gradientEnd="#c17de5"
+    />
+    <ProjectCard
+      projectName="Doctors Office Site"
+      projectDescription="Next.js"
+      projectLink="https://www.conradeyecenters.com/"
+      gradientStart="#1e7301"
+      gradientEnd="#6be7ad"
+    />
     <ResumePage />
   </div>
 </template>
 
 <script setup>
-import ParamountPlus from './ParamountPlus.vue'
-import DadSite from './DadSite.vue'
-import FSWScheduleSearch from './FSWScheduleSearch.vue'
 import ResumePage from './ResumePage.vue'
+import ProjectCard from './ProjectCard.vue'
 
 defineProps({
   name: {
@@ -133,12 +150,6 @@ a:hover {
   margin-top: 1rem;
 }
 
-/* Media Queries for Responsiveness */
-
-/* Add viewport meta tag to your HTML head */
-/* <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> */
-
-/* Small phones */
 @media (max-width: 375px) {
   .container {
     padding: 0.5rem;
@@ -166,7 +177,6 @@ a:hover {
   }
 }
 
-/* Medium-sized phones */
 @media (min-width: 376px) and (max-width: 767px) {
   .container {
     padding: 1rem;
@@ -179,7 +189,6 @@ a:hover {
   }
 }
 
-/* Tablets and larger phones */
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     margin-left: 3rem;
@@ -187,8 +196,6 @@ a:hover {
   }
 }
 
-/* Desktop view */
-/* Need to add to your main HTML file */
 html,
 body {
   width: 100%;
