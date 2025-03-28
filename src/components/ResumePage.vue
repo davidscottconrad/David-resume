@@ -13,10 +13,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import resumePdf from '/David_Conrad_resume_02_25_25.pdf'
-// import resumePdf from ' /David_Conrad_resume_02_25_25.pdf'
 
-const resumePath = ref(resumePdf)
+const resumePath = ref('/David_Conrad_resume_02_25_25.pdf')
 
 defineProps({
   name: {
@@ -45,7 +43,6 @@ defineProps({
   width: 100%;
   border-radius: 0;
   box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.4);
-  /* background-color: #a99972; */
   background-image: linear-gradient(45deg, #aa006c, #ff005d);
   position: relative;
   overflow: hidden;
