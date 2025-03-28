@@ -14,7 +14,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const resumePath = ref('/David_Conrad_resume_02_25_25.pdf')
+const resumePath = ref(`${window.location.origin}/David_Conrad_resume_02_25_25.pdf`)
 
 defineProps({
   name: {
