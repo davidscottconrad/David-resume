@@ -29,12 +29,25 @@
       gradientStart="#1e7301"
       gradientEnd="#6be7ad"
     />
-    <ResumePage />
+    <ProjectCard
+      projectName="Resume"
+      projectDescription="See my resume on dropbox"
+      projectLink="https://www.dropbox.com/scl/fi/tdnr1upxntd80hckpfzyz/David_Conrad_resume_02_25_25.pdf?rlkey=76bbypup8ja7l42h86rnm4ohz&st=zdkqvbpz&dl=0"
+      gradientStart="#aa006c"
+      gradientEnd="#ff005d"
+    />
+    <ProjectCard
+      projectName="Github"
+      projectDescription="See all my personal projects on Github"
+      projectLink="https://github.com/davidscottconrad"
+      gradientStart="#2b3137"
+      gradientEnd="#24292e"
+      style="margin-bottom: 5rem"
+    />
   </div>
 </template>
 
 <script setup>
-import ResumePage from './ResumePage.vue'
 import ProjectCard from './ProjectCard.vue'
 
 defineProps({
