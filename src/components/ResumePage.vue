@@ -13,7 +13,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import resumePdf from '../components/David_Conrad_resume_02_25_25.pdf'
+import resumePdf from '/David_Conrad_resume_02_25_25.pdf'
+// import resumePdf from ' /David_Conrad_resume_02_25_25.pdf'
 
 const resumePath = ref(resumePdf)
 
